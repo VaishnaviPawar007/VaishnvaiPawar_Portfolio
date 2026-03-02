@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vaishnavi Pawar | Software Developer Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+    --black:#0f1117;
+    --card:#161b22;
+    --green:#2ecc71;
+    --white:#ffffff;
+    --gray:#9ca3af;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:var(--black);
+    color:var(--white);
+}
+
+/* HERO */
+
+header{
+    min-height:90vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+h1{
+    font-size:4rem;
+    letter-spacing:2px;
+}
+
+.highlight{
+    color:var(--green);
+}
+
+.tagline{
+    margin-top:15px;
+    color:var(--gray);
+    font-size:1.2rem;
+    max-width:700px;
+}
+
+.cta{
+    margin-top:35px;
+}
+
+.btn{
+    padding:14px 30px;
+    border-radius:40px;
+    margin:10px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.primary{
+    background:var(--green);
+    color:black;
+}
+
+.primary:hover{
+    transform:translateY(-5px);
+}
+
+.secondary{
+    border:1px solid var(--green);
+    color:var(--green);
+}
+
+.secondary:hover{
+    background:var(--green);
+    color:black;
+}
+
+/* CONTAINERS */
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:70px 20px;
+}
+
+h2{
+    font-size:2.4rem;
+    margin-bottom:35px;
+    border-left:6px solid var(--green);
+    padding-left:15px;
+}
+
+/* ABOUT */
+
+.about{
+    color:var(--gray);
+    line-height:1.9;
+    font-size:1.05rem;
+}
+
+/* LISTS */
+
+ul{
+    list-style:none;
+}
+
+li{
+    margin-bottom:12px;
+    color:var(--gray);
+}
+
+/* PROJECTS */
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.card{
+    background:var(--card);
+    padding:30px;
+    border-radius:14px;
+    transition:.35s;
+    position:relative;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card::before{
+    content:"";
+    position:absolute;
+    height:5px;
+    width:100%;
+    background:var(--green);
+    top:0;
+    left:0;
+    border-radius:14px 14px 0 0;
+}
+
+.tech{
+    margin-top:15px;
+    color:var(--green);
+    font-size:.9rem;
+}
+
+.card a{
+    display:inline-block;
+    margin-top:18px;
+    color:var(--green);
+    text-decoration:none;
+    font-weight:600;
+}
+
+.card a:hover{
+    text-decoration:underline;
+}
+
+/* SKILLS */
+
+.skill{
+    margin-bottom:25px;
+}
+
+.bar{
+    background:#222;
+    height:8px;
+    border-radius:20px;
+    margin-top:8px;
+}
+
+.progress{
+    height:100%;
+    background:var(--green);
+    border-radius:20px;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+    padding:60px 20px;
+    border-top:1px solid #222;
+    color:var(--gray);
+}
+
+footer a{
+    color:var(--green);
+    margin:0 10px;
+    text-decoration:none;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+
+<header>
+
+<h1>Vaishnavi <span class="highlight">Pawar</span></h1>
+
+<p class="tagline">
+Entry-Level Software Developer | Java • Spring Boot • REST APIs • MySQL |Building Reliable Backend Applications
+</p>
+
+<div class="cta">
+<a class="btn primary" href="VaishnaviPawarCv.pdf" target="_blank">Download Resume</a>
+<a class="btn secondary" href="https://github.com/Pranavpathe" target="_blank">GitHub</a>
+</div>
+
+</header>
+
+
+<!-- ABOUT -->
+
+<div class="container">
+
+<h2>About Me</h2>
+
+<p class="about">
+I am aspiring Java Developer passionate about creating scalable backend applications. With hands-on experience in Java, Spring Boot, REST APIs, and MySQL, I focus on building efficient systems and solving real-world problems through technology.
+
+
+I enjoy exploring new tools and frameworks while continuously improving my coding, problem-solving, and system design skills to deliver impactful software solutions.
+</p>
+
+</div>
+
+
+<!-- ACHIEVEMENTS -->
+
+<div class="container">
+
+<h2>Key Achievements</h2>
+
+<ul>
+<li>✔ MCA Graduate with 7.99 CGPA</li>
+<li>✔ NPTEL: Programming in Java – IIT Kharagpur</li>
+<li>✔ NPTEL: Data Structures and Algorithms using Java – IIT Kharagpur</li>
+<li>✔ Strong skills in Object-Oriented Programming, REST APIs & Database Design</li>
+</ul>
+
+</div>
+
+
+<!-- PROJECTS -->
+
+<div class="container">
+
+<h2>Featured Projects</h2>
+
+<div class="projects">
+
+<div class="card">
+<h3>Food4All – Surplus Food Management Platform</h3>
+
+<p class="about">
+A dynamic web application developed using HTML, CSS, JavaScript, PHP, and MySQL that enables food donors to list surplus food and allows volunteers and NGOs to manage collection and distribution. 
+The system includes modules for user management, inventory tracking, and reporting to ensure efficient food redistribution.</p>
+
+<div class="tech">
+HTML • CSS • Javascript • PHP  
+</div>
+
+<a href="https://food4all.infy.uk/ " target="_blank">
+View Project →
+</a>
+
+</div>
+
+
+<div class="card">
+<h3>Employee Management System – Backend Application</h3>
+
+<p class="about">
+A RESTful backend system built with Spring Boot, Hibernate, and MySQL for managing employee data. 
+The application supports CRUD operations through REST APIs and demonstrates backend development concepts such as database integration, API design, and object-oriented programming</p>
+
+<div class="tech">
+Java • Spring Boot • REST API • MySQL Java •  Hibernate  
+</div>
+
+<a href="https://github.com/VaishnaviPawar007/em-project" target="_blank">
+View Project →
+</a>
+
+</div>
+
+
+<div class="card">
+<h3>🗄 Organ Donation Management System</h3>
+
+<p class="about">
+Developed a database-driven web application using MySQL to manage donor and recipient records. 
+Designed relational schemas, executed complex SQL queries, and ensured efficient data retrieval.
+</p>
+
+<div class="tech">
+HTML • CSS • Javascript • PHP • MySQL
+</div>
+
+<a href="https://github.com/VaishnaviPawar007/Organ-Donation-Management-System-Project/tree/main" target="_blank">
+View Project →
+</a>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- SKILLS -->
+
+<div class="container">
+
+<h2>Technical Skills</h2>
+
+<div class="skill">
+Java
+<div class="bar"><div class="progress" style="width:90%"></div></div>
+</div>
+
+<div class="skill">
+SQL / MySQL
+<div class="bar"><div class="progress" style="width:85%"></div></div>
+</div>
+
+<div class="skill">
+Spring Boot
+<div class="bar"><div class="progress" style="width:75%"></div></div>
+</div>
+
+<div class="skill">
+DSA
+<div class="bar"><div class="progress" style="width:80%"></div></div>
+</div>
+
+</div>
+
+
+<!-- WHAT I BRING -->
+
+<div class="container">
+
+<h2>What I Bring</h2>
+
+<ul>
+<li>✔ Backend development using Java and Spring Boot</li>
+<li>✔ Database design and integration with MySQL</li>
+<li>✔ REST API development and system architecture basics</li>
+<li>✔ Passion for building scalable and efficient applications</li>
+<li>✔ Fast learner with a growth mindset</li>
+</ul>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>📧 vaishnavinpawar007@gmail.com</p>
+
+<p>
+<a href="https://github.com/VaishnaviPawar007">GitHub</a> |
+<a href="www.linkedin.com/in/vaishnavi-pawar-vnp07">LinkedIn</a>
+</p>
+
+<p>© 2026 Vaishnavi Pawar</p>
+
+</footer>
+
+</body>
+</html>
